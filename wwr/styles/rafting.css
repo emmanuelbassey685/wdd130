@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #000000;
+    --accent1-color: #ffffff;
+    --accent2-color: #1e90ff;
+}
+
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 header,
@@ -44,9 +50,10 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
+    left: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -54,6 +61,16 @@ h1 {
     background-color: var(--accent1-color);
     color: #fff;
     /* white text - make sure there is enough contrast with the background-color */
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem;
+    max-width: 600px;
 }
 
 .hero article img {

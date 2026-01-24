@@ -33,12 +33,6 @@ nav a {
     color: #fff;/% shorthand for white %/
 }
 
-header,
-.grid,
-footer {
-    grid-template-columns: 1fr 2fr;
-}
-
 .grid {
     display: grid;
     align-items: center;

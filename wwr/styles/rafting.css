@@ -137,12 +137,6 @@ h1 {
     border-top-right-radius: 8px;
 }
 
-figcaption {
-    margin-top: 10px;
-    font-style: 2em;
-    color: #555;
-}
-
 footer {
     display: flex;
     justify-content: flex-end;

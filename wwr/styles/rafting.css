@@ -32,6 +32,7 @@ header img {
 header nav {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
     justify-content: flex-end;
     gap: 20px;
     align-items: center;
@@ -60,8 +61,8 @@ nav,
 p,
 section,
 article {
-    margin: 20px;
-    padding: 10px;
+    margin: 15px;
+    padding: 15px;
 }
 
 .socialmedia a {
@@ -106,22 +107,36 @@ h1 {
     width: 125px;
 }
 
+h2 {
+    position: relative;
+    text-align: center;
+    bottom: 15px;
+}
+
+.history {
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.history-grid {
+    display: block;
+    place-items: center;
+}
+
 .adventures {
-    display: var(--body-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 40px 15%;
 }
 
 .adventure-grid {
     display: flex;
+    place-items: center;
     gap: 4px;
-}
-
-.adventures-section figure {
-    flex: 1 1 calc(20% - 15px);
-    text-align: center;
-    padding: 10px;
-    padding-bottom: 10%;
-    border-radius: 10%;
 }
 
 .adventures-section img {

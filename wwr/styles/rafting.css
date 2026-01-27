@@ -6,11 +6,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +22,7 @@ header {
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 10px 5%;
-    background-color: #333;
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -153,7 +148,7 @@ footer {
     justify-content: flex-end;
     align-items: center;
     padding: 5px;
-    background-color: #333;
+    background-color: var(--primary-color);
     color: white;
     margin-top: 40px;
 }

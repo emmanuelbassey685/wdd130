@@ -39,45 +39,38 @@
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" placeholder="placeholder"></input>
 
-                <!-- Text input -->
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname">
+                <label for="email">Email</label>
+                <input type="email" placeholder="placeholder"></input>
 
-                <!-- Email input -->
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email">
-
-                <!-- Radio buttons (exactly three, same name) -->
-                <p>Choose your level:</p>
+                <legend>Message Purpose</legend>
 
                 <label for="level1">
                     <input type="radio" id="level1" name="level" value="beginner">
-                    Beginner
+                    General Inquiry
                 </label>
 
                 <label for="level2">
                     <input type="radio" id="level2" name="level" value="intermediate">
-                    Intermediate
+                    Reservation Question
                 </label>
 
                 <label for="level3">
                     <input type="radio" id="level3" name="level" value="advanced">
-                    Advanced
+                    Website Suggestion
                 </label>
 
-                <!-- Textarea -->
-                <label for="message">Your Message</label>
+                <label for="message">Message</label>
                 <textarea id="message" name="message"></textarea>
 
-                <!-- Checkbox -->
                 <label for="agree">
                     <input type="checkbox" id="agree" name="agree">
-                    I agree to the terms
+                    Please subscribe me to the monthly newsletter
                 </label>
 
-                <!-- Submit button (meaningful text) -->
-                <button type="submit">Send Message</button>
+                <button type="submit">Get in Touch!</button>
 
             </form>
         </section>

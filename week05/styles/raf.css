@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -73,72 +73,44 @@ section {
     margin-top: 5px;
 }
 
-form {
-    max-width: 420px;
-    margin: 40px auto;
-    margin-top: 3px;
+.contact-form {
+    padding: 5px;
 }
 
-/* Labels */
-form label {
+.contact-form label {
     display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
-}
-
-/* Text inputs & textarea */
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
     margin-bottom: 15px;
-    font-size: 10px;
-}
-
-.message-purpose {
-    margin-bottom: 15px;
-}
-
-.message-purpose label {
-    display: flex;
-    align-items: center;
-    font-weight: normal;
-    margin-bottom: 6px;
-    cursor: pointer;
-}
-
-.message-purpose input[type="radio"] {
-    margin-right: 8px;
-}
-
-/* Textarea */
-form textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-/* Checkbox */
-.newsletter {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: var(--accent1-color);
-    color: var(--accent2-color);
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
     font-weight: bold;
-    cursor: pointer;
 }
 
-form button:hover {
-    background-color: var(--accent1-color);
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.textarea {
+    height: 100px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    width: 100%;
+    cursor: pointer;
 }
 
 .team-cards {

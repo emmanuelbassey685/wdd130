@@ -73,10 +73,6 @@ section {
     margin-top: 5px;
 }
 
-.no-border {
-    border: 0;
-}
-
 form {
     max-width: 420px;
     margin: 40px auto;

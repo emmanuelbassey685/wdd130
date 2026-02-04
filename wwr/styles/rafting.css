@@ -138,6 +138,6 @@ footer p {
 .socials span {
     width: 15px;
     height: 15px;
-    display: inline-block;
+    display: block;
     margin-left: 5px;
 }

@@ -38,47 +38,30 @@
                   width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <form action="#" method="post">
-
-                <!-- Text input -->
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname">
-
-                <!-- Email input -->
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email">
-
-                <!-- Radio buttons (exactly three, same name) -->
-                <p>Choose your level:</p>
-
-                <label for="level1">
-                    <input type="radio" id="level1" name="level" value="beginner">
-                    Beginner
+            <form class="contact-form">
+                <label>
+                    Name
+                    <input type="text" placeholder="Placeholder">
                 </label>
-
-                <label for="level2">
-                    <input type="radio" id="level2" name="level" value="intermediate">
-                    Intermediate
+                <label>
+                    Email
+                    <input type="email" placeholder="Placeholder">
                 </label>
-
-                <label for="level3">
-                    <input type="radio" id="level3" name="level" value="advanced">
-                    Advanced
+                <fieldset>
+                    <legend>Message Purpose</legend>
+                    <label><input type="radio" name="purpose"> General Inquiry</label>
+                    <label><input type="radio" name="purpose"> Reservation Question</label>
+                    <label><input type="radio" name="purpose"> Website Suggestion</label>
+                </fieldset>
+                <label>
+                    Message
+                    <textarea placeholder="Type here"></textarea>
                 </label>
-
-                <!-- Textarea -->
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message"></textarea>
-
-                <!-- Checkbox -->
-                <label for="agree">
-                    <input type="checkbox" id="agree" name="agree">
-                    I agree to the terms
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Please subscribe me to the monthly newsletter
                 </label>
-
-                <!-- Submit button (meaningful text) -->
-                <button type="submit">Send Message</button>
-
+                <button type="submit">Get in Touch!</button>
             </form>
         </section>
 

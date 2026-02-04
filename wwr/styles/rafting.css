@@ -103,7 +103,7 @@ section {
 }
 
 button {
-    display: inline-block;
+    display: block;
     padding: 10px 20px;
     border: 1px solid #aaa;
     border-radius: 5px;

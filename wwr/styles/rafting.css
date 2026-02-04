@@ -69,8 +69,12 @@ section {
     padding: 20px 3%;
 }
 
-.map {
-    margin-top: 5px;
+section {
+    margin-top: 50px;
+}
+
+map {
+    margin-top: 0px;
 }
 
 form {

@@ -39,11 +39,13 @@
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <form action="#" method="post">
+
                 <label for="name">Name</label>
-                <input type="text" placeholder="placeholder"></input>
+                <input type="text" id="name" placeholder="placeholder">
 
                 <label for="email">Email</label>
-                <input type="email" placeholder="placeholder"></input>
+                <input type="email" id="email" placeholder="placeholder">
+
 
                 <legend>Message Purpose</legend>
 
@@ -65,17 +67,17 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message"></textarea>
 
-                <label for="agree">
-                    <input type="checkbox" id="agree" name="agree">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                <div><label for="agree">
+                        <input type="checkbox" id="agree" name="agree">
+                        Please subscribe me to the monthly newsletter
+                    </label></div>
 
                 <button type="submit">Get in Touch!</button>
 
             </form>
         </section>
 
-        <section class="Team section">
+        <div class="Team section">
             <h2>We Are Here to Serve You</h2>
             <div class="team-cards">
                 <figure>
@@ -91,7 +93,7 @@
                     <figcaption>Employee profile</figcaption>
                 </figure>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <p>copy; ©️2026 White Water Rafting Co. | Emmanuel Bassey</p>

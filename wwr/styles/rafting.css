@@ -92,13 +92,18 @@ h1 {
     margin-bottom: 10px;
 }
 
+.map-frame {
+    border: 0;
+    height: 380px;
+    padding-top: 20px;
+}
+
 /* =========================
    Form Styling
 ========================= */
 
 form label {
     display: block;
-    margin-top: 10px;
 }
 
 .map iframe,
@@ -106,14 +111,14 @@ form input[type="text"],
 form input[type="email"],
 form textarea {
     width: 100%;
-    padding: 5px;
-    margin-top: 10px;
+    padding: 7px;
+    margin-top: 5px;
     border-radius: 5px;
     font-size: 1rem;
 }
 
 form textarea {
-    min-height: 90px;
+    min-height: 80px;
     resize: vertical;
 }
 
@@ -132,7 +137,7 @@ form input[type="checkbox"] {
 button {
     margin-top: 15px;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     font-size: 0.9rem;
     border-radius: 5px;
     cursor: pointer;

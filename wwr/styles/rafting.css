@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 :root {
     --primary-color: #055a05;
     --accent1-color: #264653;
@@ -6,170 +13,223 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    margin: 0;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: var(--primary-color);
-}
-
-header nav a {
-    margin-left: 15px;
-    color: var(--accent2-color);
-    text-decoration: none;
-    padding: 8px 16px;
-    border: 1px solid #aaa;
-}
-
-.company-info {
-    text-align: center;
-    padding: 30px 10px;
-}
-
+/* =========================
+   Header & Navigation
+========================= */
 header,
-main,
 footer {
     width: 840px;
     margin: 0 auto;
 }
 
-h1,
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: var(--primary-color);
+}
+
+header img {
+    width: 100px;
+}
+
+header nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    margin-left: 15px;
+    border: 1px solid #aaa;
+    padding: 8px 16px;
+}
+
+/* =========================
+   Main Layout
+========================= */
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 25px 5%;
+}
+
+/* =========================
+   Company Info (Aside)
+========================= */
+.company-info {
+    font-family: var(--heading-font);
+    background-color: var(--primary);
+    color: var(--primary-color);
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    border-radius: 1px;
+    margin-bottom: 1px;
+}
+
+.company-info h1 {
+    margin-bottom: 5px;
+}
+
+.company-info p {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   Contact Section
+========================= */
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+/* Map */
+.map iframe {
+    width: 105%;
+    height: 490px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   Form Styling
+========================= */
+form {
+    background-color: none;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    min-height: 95px;
+    resize: vertical;
+}
+
+legend {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Radio & Checkbox */
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: none;
+    color: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* =========================
+   Team Section
+========================= */
+.team {
+    font-family: var(--heading-font);
+    background-color: var(--primary);
+    color: var(--primary-color);
+    position: relative;
+    text-align: center;
+    padding: 0px;
+}
+
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     position: relative;
     text-align: center;
-    bottom: 15px;
-}
-
-nav,
-section {
-    margin: 20px;
-    padding: 5px;
-}
-
-.contact-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    padding: 20px 3%;
-}
-
-section {
-    margin-top: 50px;
-}
-
-map {
-    margin-top: 0px;
-}
-
-form {
-    max-width: 420px;
-    margin: 40px auto;
-    margin-top: 3px;
-}
-
-/* Labels */
-form label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
-}
-
-/* Text inputs & textarea */
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 10px;
-}
-
-.message-purpose {
-    margin-bottom: 15px;
-}
-
-.message-purpose label {
-    display: flex;
-    align-items: center;
-    font-weight: normal;
-    margin-bottom: 6px;
-    cursor: pointer;
-}
-
-.message-purpose input[type="radio"] {
-    margin-right: 8px;
-}
-
-/* Textarea */
-form textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-/* Checkbox */
-.newsletter {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: var(--accent1-color);
+    bottom: 20px;
 }
 
 .team-cards {
     display: flex;
-    padding: 0px;
     text-align: center;
     justify-content: space-around;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
 }
 
+.team-cards figure {
+    background-color: none;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.team-cards img {
+    width: 60%;
+    border-radius: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-cards figcaption {
+    font-weight: 500;
+}
+
+/* =========================
+   Footer
+========================= */
 footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px 1%;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    margin-top: 40px;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer p {
-    font-size: 0.9em;
+    font-size: 0.95rem;
 }
 
-.socials span {
-    width: 15px;
-    height: 15px;
-    display: block;
-    margin-left: 5px;
+.socialmedia img {
+    width: 30px;
+    height: 15;
+    margin-left: 15px;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 768px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
 }

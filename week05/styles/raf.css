@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #055a05;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--primary-color);
+}
+
+header nav a {
+    margin-left: 15px;
+    color: var(--accent2-color);
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #aaa;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    position: relative;
+    text-align: center;
+    bottom: 15px;
+}
+
+nav,
+aside,
+section {
+    margin: 20px;
+    padding: 5px;
+}
+
+aside {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.textarea {
+    height: 100px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    display: grid;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0%;
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 1%;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+.socials span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin-left: 5px;
+}

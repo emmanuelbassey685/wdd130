@@ -40,28 +40,25 @@
             </div>
             <form action="#" method="post">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name">
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
 
                 <fieldset>
-                    <legend>Message Purpose</legend>
+                    <legend for="Message Purpose">Message Purpose</legend>
 
-                    <label>
-                        <input type="radio" name="purpose" value="general">
-                        General Inquiry
-                    </label>
+                    <label for="level1">
+                        <input type="radio" id="level1" name="level" value="beginner">
+                        General Inquiry </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
+                    <label for="level2">
+                        <input type="radio" id="level2" name="level" value="intermediate">
+                        Reservation Question </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
+                    <label for="level3">
+                        <input type="radio" id="level3" name="level" value="advanced">
+                        Website Suggestion </label>
                 </fieldset>
 
                 <label for="message">Message</label>
@@ -111,3 +108,22 @@
 </body>
 
 </html>
+
+<form action="#" method="post">
+    <label for="name"> Name</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email"> Email</label>
+    <input type="email" id="email" name="email">
+
+    <legend> Message Purpose</legend>
+
+
+    <label for="message"> Message</label>
+    <textarea id="message" name="message"> </textarea>
+
+    <label for="checkbox">
+        <input type="checkbox" id="checkbox" name="checkbox"> Please subscribe me to the monthly
+        newsletter </label>
+    <button type="submit"> Get in Touch !</button>
+</form>

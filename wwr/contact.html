@@ -47,22 +47,24 @@
                 <fieldset>
                     <legend for="Message Purpose">Message Purpose</legend>
                     <label for="level1">
-                        <input type="radio" id="level1" name="level" value="beginner">
+                        <input type="radio" id="level1" name="level">
                         General Inquiry </label>
                     <label for="level2">
-                        <input type="radio" id="level2" name="level" value="intermediate">
+                        <input type="radio" id="level2" name="level">
                         Reservation Question </label>
                     <label for="level3">
-                        <input type="radio" id="level3" name="level" value="advanced">
+                        <input type="radio" id="level3" name="level">
                         Website Suggestion </label>
                 </fieldset>
                 <label for="message">Message</label>
                 <textarea id="message" name="message"></textarea>
-                <label>
-                    <input type="checkbox" name="newsletter">
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox" name="newsletter">
                     Please subscribe me to the monthly newsletter
                 </label>
-                <button type="submit">Get in Touch!</button>
+                <button for="submit">
+                    <input type="get in touch" id="submit" name="submit">
+                    Get in Touch!</button>
             </form>
         </div>
         <div class="Team section">

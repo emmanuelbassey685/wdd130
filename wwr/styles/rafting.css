@@ -23,7 +23,6 @@ body {
    Header & Navigation
 ========================= */
 header,
-main,
 footer {
     width: 840px;
     margin: 0 auto;
@@ -95,9 +94,9 @@ h1 {
     margin-bottom: 10px;
 }
 
-.map-frame {
+.iframe-src {
     border: 0;
-    height: 390px;
+    height: 450px;
     padding-top: 20px;
 }
 

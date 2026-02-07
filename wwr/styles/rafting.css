@@ -94,8 +94,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.iframe-src {
-    border: 0;
+.map-frame {
     height: 450px;
     padding-top: 20px;
 }

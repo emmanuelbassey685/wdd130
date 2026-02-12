@@ -92,7 +92,7 @@ h5 {
     justify-content: space-between;
     opacity: 0.7;
     font-family: var(--heading-font);
-    color: var(--accent4-color);
+    color: var(--primary-color);
     font-size: 2rem;
     bottom: 5px;
 }

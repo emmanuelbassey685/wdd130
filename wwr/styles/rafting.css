@@ -110,7 +110,7 @@ h5 {
 
 .hero article {
     position: absolute;
-    top: 70%;
+    top: 65%;
     right: 35%;
     transform: translateX(-50%);
     background-color: var(--accent2-color);
@@ -138,7 +138,7 @@ h5 {
 
 .grid {
     position: absolute;
-    top: 95%;
+    top: 91%;
     left: 67%;
     transform: translateX(-50%);
     background-color: var(--accent2-color);
